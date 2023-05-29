@@ -1,0 +1,95 @@
+#blog{
+    font-size: 50px;
+    color: red;
+    /* font-weight: 800; */
+   
+    text-align: center;
+    animation-name: slideInLeft;
+    animation-duration: 3s;
+    animation-timing-function: 1;
+    animation-iteration-count: infinite;
+
+   
+
+}
+.profile{
+    display: flex;
+    /* text-align: center; */
+    gap:4px;
+    align-items: center;
+    margin-right: 50px;
+}
+#name{
+    color: blue;
+}
+.profile-image{
+    width: 10%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid burlywood;
+    margin-left:50px ;
+    
+}
+body{
+    background-color:#ffe8cc ;
+}
+#fashion1{
+    width: 50%;
+  border-bottom-right-radius: 20%;
+    border-top-left-radius: 20%;
+  
+    padding: 10px;
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+
+}
+
+.blogs{
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0.2);
+
+    margin: 10px;
+  
+
+}
+.title{
+    font-size: 25px;
+    font-weight: 500;
+    /* color: red; */
+    color: darkblue;
+ transition: transform 0.3s;
+
+}
+.title:hover{
+    color:red;
+    transition: all ease 0.3s;
+    transform: translateY(-10px);
+}
+.read:hover{
+    color: red;
+    transition: all ease 0.3s;
+}
+.BLOG{
+    display:flex
+    
+}
+@keyframes rotate{
+    from{
+        transform:rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes slideInLeft{
+    from{
+        transform:translateX(-300px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
